@@ -1,6 +1,6 @@
 {
-  "short_name": "dogs",
-  "name": "dogApp",
+  "short_name": "PWA",
+  "name": "Progressive WebApp",
   "icons": [
     {
       "src": "favicon.ico",
