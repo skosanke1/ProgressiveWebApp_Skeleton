@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../logo512.png';
 import userPicture from '../../user.png';
 import './TopNavBarStyle.css';
@@ -16,7 +16,7 @@ function TopNavbar({ userName }) {
         <li><a href="#contact">Contact Me</a></li>
       </ul>
       <div className="right">
-        <p className="greeting">Hello, {userName}</p>
+        <p className="top_greeting">Hello, {userName}</p>
         <img src={userPicture} alt="Profile" className="profile-picture" />
       </div>
     </div>

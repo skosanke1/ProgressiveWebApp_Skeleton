@@ -1,0 +1,109 @@
+/* LeftNavBar.css */
+.left-nav-bar {
+  width: 33.33%;
+  height: 100vh;
+  background-color: #555;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+/* Style the tabs (unchanged) */
+
+.tab {
+  transform: translateY(20vh);
+  margin-bottom: 20px;
+}
+
+.tab a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.tab a:hover {
+  color: #ff5733;
+}
+
+.greeting {
+  color: #fff;
+  position: fixed;
+  margin-bottom: 10px;
+  margin-top: 70px; 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the hamburger icon */
+.menu-toggle {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+
+.hamburger {
+  margin-bottom:6px;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 6px;
+  background-color: #000;
+  transition: all 0.0s linear;
+  z-index: 3;
+}
+
+.hamburger::before {
+  display: block;
+  width: 50px;
+  height: 6px;
+  background-color: #000;
+  content: '';
+  z-index: 4;
+  transition: all 0.3s linear;
+  transform: translateY(-12px);
+}
+
+.hamburger::after {
+  display: block;
+  width: 50px;
+  height: 6px;
+  background-color: #000;
+  content: '';
+  z-index: 4;
+  transition: all 0.3s linear;
+  transform: translateY(6px);
+}
+
+.active .hamburger {
+  background-color: transparent;
+}
+
+.active .hamburger::before {
+  transform: translateY(0px) rotate(45deg);
+  background-color: white;
+}
+
+.active .hamburger::after {
+  transform: translateY(-6px) rotate(-45deg); /* Rotate the bottom stripe */
+  background-color: white;
+}

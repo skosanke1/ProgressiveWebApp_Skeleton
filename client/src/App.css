@@ -17,9 +17,9 @@
   justify-content: center;
   font-size: calc(20px + 2vmin);
   color: black;
+  z-index: -2;
 }
 
 .App-link {
-  color: #0000EE;
+  color: #ff5733;
 }
-
